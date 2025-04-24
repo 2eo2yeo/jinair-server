@@ -210,7 +210,7 @@ export const getQna = async (qid) => {
   q.CONTENT AS content,
   LEFT(q.REG_DATE, 10) AS reg_date,
   (
-    SELECT CONCAT('http://13.209.74.163:9000/', jt.img)
+    SELECT CONCAT('http://52.79.39.41:9000/', jt.img)
     FROM JSON_TABLE(
       JSON_UNQUOTE(q.qnaImg->>'$[0]'),
       '$[*]' COLUMNS (

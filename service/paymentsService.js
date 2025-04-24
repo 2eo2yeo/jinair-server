@@ -5,7 +5,7 @@ export async function confirmPayment(paymentInfo = {}) {
 
     const encryptedSecretKey = 'Basic ' + Buffer.from(secretKey + ':').toString('base64');
 
-    const response = await fetch('http://localhost:3000/booking/success', {
+    const response = await fetch('http://jinair-react22.s3-website.ap-northeast-2.amazonaws.com/booking/success', {
         method: 'POST',
         headers: {
             Authorization: encryptedSecretKey,
