@@ -113,8 +113,8 @@ export const setSignup = async(req, res)=>{
 export const getNaverToken = async (req, res) => {
   const { code, state } = req.body;
 
-  const client_id = 'CLQEVWVzvGWP5Smx7Vgn';
-  const client_secret = '_TXhJET9_C';
+  const client_id = '0xPlB5aYWAZOgjR7ET4n';
+  const client_secret = 'PLU_yiLoiE';
   const redirect_uri = 'http://jinair-react22.s3-website.ap-northeast-2.amazonaws.com/naver-redirect'; 
 
   try {// 1. access_token 요청
@@ -154,7 +154,7 @@ export const getNaverToken = async (req, res) => {
 export const getKakaoToken = async (req, res) => {
   const { code } = req.body;
 
-  const REST_API_KEY = '3f5c49e05800584ba496c54e74152ab3'; 
+  const REST_API_KEY = '6cae78a478c9f448f6c4481db1ea99e4'; 
   const REDIRECT_URI = 'http://jinair-react22.s3-website.ap-northeast-2.amazonaws.com/kakao-redirect'; 
 
   try {
